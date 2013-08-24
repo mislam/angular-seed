@@ -6,7 +6,7 @@ define({
 	libDir: '/js/lib',
 	routes: {
 		'/contacts' : 'contact/Contact',
-		'/contact/edit/:id' : 'contact/ContactEdit',
-		'/foo/bar' : 'FooBar'
-	}
+		'/contact/:id' : 'contact/ContactDetail'
+	},
+	defaultRedirect: '/contacts'
 });

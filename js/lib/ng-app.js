@@ -105,7 +105,7 @@ define(['config'], function (config) {
 				}
 			}
 
-			$routeProvider.otherwise({ redirectTo: '/' });
+			$routeProvider.otherwise({ redirectTo: config.defaultRedirect });
 	}]);
 
 	return app;

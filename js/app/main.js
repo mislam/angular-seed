@@ -11,8 +11,13 @@ require(['config'], function(config) {
 		}
 	});
 	
-	require(['app'], function (app) {
-		angular.bootstrap(document, [app.name]);
-	});
+	require(
+		[
+			'app',
+			'services/contactService'
+		],
+		function (app) {
+			angular.bootstrap(document, [app.name]);
+		});
 
 });
