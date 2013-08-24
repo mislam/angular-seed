@@ -1,5 +1,5 @@
-Angular + RequireJS Seed
-========================
+Angular + RequireJS Boilerplate
+===============================
 
 This project is an application skeleton for an ideal AngularJS web app. You can use it with a minimal configuration to easily bootstrap your angular projects.
 
@@ -53,11 +53,18 @@ define({
 		'/path' : 'subdir/Controller1',
 		'/path/with/:id' : 'subdir/Controller2',
 		'/more/path' : 'Controller3'
-	}
+	},
+	defaultRedirect: '/path'
 });
 ````
 
 Notice that, the controllers and views can be organized by placing them under sub-directories. But it still works, if you wish to place them directly under the `controllers` and `views` directories.
+
+
+Seed Project : PhoneBook App
+----------------------------
+
+The PhoneBook example project included in this seed has two controllers (`Contact` and `ContactDetail`) and one service (`contactService`). The purpose is simply retrieving data from a model and populate the view accordingly.
 
 
 Inspired by
